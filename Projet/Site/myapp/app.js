@@ -10,6 +10,9 @@ var rechercheManger = require('./routes/rechercheManger');
 var rechercheSortir = require('./routes/rechercheSortir');
 var contact = require('./routes/contact');
 var login = require('./routes/login');
+var sortir = require('./routes/sortir');
+var boire = require('./routes/boire');
+var manger = require('./routes/manger');
 
 var app = express();
 
@@ -31,6 +34,9 @@ app.use('/rechercheManger', rechercheManger);
 app.use('/rechercheSortir', rechercheSortir);
 app.use('/contact', contact);
 app.use('/login', login);
+app.use('/sortir',sortir);
+app.use('/boire',boire);
+app.use('/manger',manger);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
