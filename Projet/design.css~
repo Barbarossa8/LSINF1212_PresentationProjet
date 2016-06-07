@@ -1,0 +1,186 @@
+
+/*Logo*/
+.logo{	
+	position:fixed;
+	float:left;
+	width:250px;
+	height: 100px;
+}
+
+/*Navigation menu*/
+.navigation li a {
+	
+	clear: both;
+	color: #fff ;
+  	text-align: center ;
+  	text-decoration: none;
+}
+
+.navigation{
+	clear: both;
+	list-style: none;
+	margin-top: 100%;
+	text-align: center;
+}
+
+#bar{
+	list-style-type: none;
+	clear: both;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(192,192,192,0.3);
+	border: 1px double rgba(170, 170, 172, 1);
+	padding:10px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px black;
+
+}
+#bar li a {
+	color: white;
+}
+
+/*Content*/
+body
+{
+	background-image: url("img/black-wood.png");
+	background-attachment: fixed;
+	font-family: Verdana, sans-serif;
+}
+
+h1
+{
+	padding-top: 2.5%;
+	font-size: 2.5em;
+	text-align: center;
+	border: 4px double rgba(192,192,192,0.3);
+	border-radius: 5px;
+	box-shadow: 10px 10px 10px black;
+	background-image: url("img/back.jpg");
+}
+
+a{
+	color: rgba(170, 170, 172, 1);
+	text-decoration: none;
+}
+
+.menu:hover{
+	text-decoration:underline;	
+}
+
+#contenu{
+	color: white;
+	display: block;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+table{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+    float: right;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+td,tr{
+    border: 1px double black;
+    color: rgba(170, 170, 172, 1);
+    text-align: center;
+}
+
+.texteDePresentation{
+	margin-left: 15%;
+	padding-left: 30%;
+	clear: right;
+}
+
+#resto{
+	float: left;
+	height: 40%;
+	width: 40%;
+	border-radius:7px;
+}
+
+#infoEtab ul{
+	margin-left: 25%;
+	color: white;
+	clear: right;
+	list-style-type: square;
+}
+
+#link{
+	color: white;
+}
+
+/*Cotation*/
+.nom{
+	font-size: 18px;
+	font-style: bold;
+}
+
+.noteAttri{
+	font-size: 18px;
+	color: rgba(245, 227, 75, 1);
+}
+
+#Commentaire{
+	margin-top: 5%;
+	background-color: rgba(192,192,192,0.3);
+	border: 1px double rgba(170, 170, 172, 1);
+	padding:10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); 
+}
+
+.commentaireLaisse{
+	font-style: italic;
+}
+
+#form{	
+	margin-top: 20%;
+	clear:both;
+	background-color:rgba(192,192,192,0.3);
+	box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3); 
+	border: 2px solid rgba(170, 170, 172, 1);
+	border-radius: 10px
+}
+
+#form p{
+	color:white;
+	margin-left: 2%
+}
+
+#commentaires
+{
+	width: 40%;
+	height: 100px;
+}
+
+#cotation
+{
+	width: 5%;
+	height: 30px;
+}
+
+.bouton a {
+display:block;
+width:150px;
+height: 20px;
+text-align:center;
+vertical-align:middle;
+background:url(img/boutonnoir.png) no-repeat;
+color:white;
+text-decoration:none;
+}
+
+.bouton a:hover {
+background:url(img/boutonnoir2.png) no-repeat;
+}
+
+/*Bas*/
+footer{
+	text-align: center;
+}
+
+#bas{
+	color: silver;
+}

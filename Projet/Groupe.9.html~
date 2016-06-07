@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		    <meta charset="utf-8" />
+		    <link rel="stylesheet" href="design.css" />
+		    <title>Le rendez-vous!</title>
+	    </head>
+
+	    <body>
+	       	<!--Le logo-->
+	        <header>
+				<img src="img/logo.png" class="logo" alt="Logo du rendez-vous" title="Notre logo">
+		    </header>
+		    
+		    <!--La navigation-->
+		    <div id="navigation">
+		        <nav>
+		            <ul id="bar">
+		                <li><a class="menu" href="#">Accueil</a></li>
+		                <li><a class="menu" href="#">Manger</a></li>
+		               	<li><a class="menu" href="#">Boire</a></li>
+		               	<li><a class="menu" href="#">Visiter</a></li>
+		               	<li><a class="menu" href="#">Compte</a></li>
+		           	</ul>
+		        </nav>
+		    </div>
+
+		    <!--Le contenu de la page-->
+	        <div id="contenu">
+	        	<div id="infoEtab">
+	        		<article>
+		             	<h1>Au bon vivant</h1>
+		               	<div> 
+		               		<img src="restaurant.jpg" id="resto" alt="Image du resto" title="Image du restaurant sélectionné">
+		               	</div>
+		               	<p class="texteDePresentation">Petit restaurant dans le centre de Louvain-La-Neuve. <br/>
+		               	Notre ambiance est chaleureuse et nos plat vont vous donner le sourire croyez-nous.<a href="#Commentaire"><span id="link"> Voir les </span>commentaires</a></p>
+		               	<p class="texteDePresentation"> Quelques informations essentielles:</p>
+		           		<ul class="texteDePresentation">
+		               		<li>Adresse: rue de l'établissement n°1</li>
+							<li>Numéro de téléphone: 0456789456</li>
+							<li> <a href="www.moodleucl.uclouvain.be">Site web du restaurant</a> </li>
+						</ul>
+						
+		           	</article>
+		           	<!--Le tableau d'ouverture-->
+		            <aside>
+		           		<table>
+					   		<caption>Horaire d'ouverture:</caption>
+							<tr>
+					     		<th>Lundi</th>
+					       		<td>Ouvert de 10H à 18H</td>
+					   		</tr>
+					   		<tr>
+						       	<th>Mardi</th>
+						       	<td>Ouvert de 10H à 23H</td>
+						  	</tr>
+						   	<tr>
+						    	<th>Mercredi</th>
+						       	<td>Ouvert de 15H à 23H</td>
+						   	</tr>
+						   	<tr>
+						      	<th>Jeudi</th>
+						       	<td>Ouvert de 10H à 14H</td>
+						   	</tr>
+						   	<tr>
+						       	<th>Vendredi</th>
+						       	<td>Ouvert de 10H à 19H</td>
+						  	</tr>
+						   	<tr>
+						     	<th>Samedi</th>
+						     	<td rowspan="2">Fermé</td>
+						   	</tr>
+						   	<tr>
+						     	<th>Dimanche</th>
+							</tr>
+						</table>
+		            </aside>
+		        </div>
+
+		        <!--La partie cotation-->
+				<div id="form">
+		       		<form method="post" action="traitement.php">
+			       		<!--Cotation-->
+						<p>
+							<label for="cotation">Quelle côte donneriez-vous à cet établissement ?</label><br />
+							<select name="cotation" id="cotation">
+								<option value="5">5</option>
+								<option value="4">4</option>
+								<option value="3">3</option>
+								<option value="2">2</option>
+								<option value="1">1</option>
+								<option value="0" selected>0</option>
+							</select>
+						</p>
+					</form>
+					<!--Commentaire-->
+					<form method="post" action="traitement.php">
+			   			<p>
+			     			<label for="commentaires">
+			       			Désirez-vous justifier cette note ?
+			       			</label>
+			      			<br/>
+			       			<textarea name="commentaires" id="commentaires" rows="10" cols="50">J'ai décidé de mettre cette note car:</textarea>
+			   			</p>
+					</form>
+					<div class="bouton">
+  						<p><a href="#">Envoyer!</a></p>
+					</div>
+				</div>
+				<!--Commentaire déjà présents-->
+				<div id="Commentaire">
+					
+					<h2 class="nom"> Jean-Paul Deckeyser</h2>
+					<p class="noteAttri"> Note attribuée: 3/5 </p>
+					<q class="commentaireLaisse">Nous y avons très bien mangé. Le menu parfait, bien équilibre. Le conseil en vin parfait. Le service est bon. Grosse déception cependant pour le cadre et l ambiance du resto. Il faisait froid et pas de fond musical à l'étage ce qui faisait qu on entendait trop les conversations des tables voisines.</q>
+					<hr>
+					<h2 class="nom"> Marie Dupont</h2>
+					<p class="noteAttri"> Note attribuée: 5/5 </p>
+					<q class="commentaireLaissé">Un excellent moment passé chez "Au bon vivant" d'un bout à l'autre. Des plats appétissants et goûtus tant pour le thon rouge que pour la pièce de viande parfaitement assaisonnée et tendre à souhaits. Mention spéciale pour le service en salle très agréable ainsi que pour le chef qui est venu en fin de soirée échanger quelques mots et partager sa passion des bons produits avec les clients. Un restaurant à l'accueil très chaleureux. A refaire sans nul doute</q>
+				</div>
+			</div>
+
+			<!--Pied de page-->
+		    <footer>
+		        <p>
+	            	Vous pouvez nous <a href="#">contacter</a> pour de plus ample information sur notre site.
+	            </p>
+	            <p>
+	            	<div id="bas"> Designed by Antonio and Antoine</div>
+	            </p>
+		    </footer>   
+		</body>
+	</html>
