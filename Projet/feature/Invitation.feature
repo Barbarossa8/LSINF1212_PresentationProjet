@@ -10,5 +10,4 @@ Feature: Invitation
     Then I should see the list of my friends
     	And I could chose who I want to send invitation
     Then my friend have a notification of invitation
-
-
+    
