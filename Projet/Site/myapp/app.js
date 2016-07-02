@@ -4,6 +4,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/Site');
+
+///////////////////////
+/*      Routes       */
+///////////////////////
+
 var routes = require('./routes/index'); //brains
 var rechercheBoire = require('./routes/rechercheBoire');
 var rechercheManger = require('./routes/rechercheManger');
