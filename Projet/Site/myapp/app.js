@@ -22,6 +22,8 @@ var login = require('./routes/login');
 var sortir = require('./routes/sortir');
 var boire = require('./routes/boire');
 var manger = require('./routes/manger');
+var inscription = require('./routes/inscription');
+var profil = require('./routes/profil');
 
 var app = express();
 
@@ -46,6 +48,8 @@ app.use('/login', login);
 app.use('/sortir',sortir);
 app.use('/boire',boire);
 app.use('/manger',manger);
+app.use('/inscription',inscription);
+app.use('/profil',profil);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
