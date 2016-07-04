@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var etablissements = require('../models/etablissement.js').etablissement;
+var mongoose = require('mongoose');
 
 /* GET rechercheBoire */
 router.get('/', function(req, res, next) 

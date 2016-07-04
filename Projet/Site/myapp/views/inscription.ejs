@@ -9,6 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="img/baseLogo.png" />
+
     <title>Le rendez-vous !</title>
 
     <!-- Bootstrap Core CSS -->
@@ -64,56 +67,32 @@
                         <form role="form">
                             <fieldset>
 
-                                <div class="form-group col-lg-12">
+                                <div class="form-group">
                                     <label for="pseudo">Votre pseudo</label><br />
                                     <input class="form-control" placeholder="Pseudo" name="pseudo" value="" autofocus required>
                                 </div>
 
-                                <div class="form-group col-lg-4">
-                                    <label for="barFav">Votre type de bar favori</label><br />
-                                    <select name="barFav" id="barFav">
-                                       <option value="relaxant">relaxant</option>
-                                       <option value="musical">musical</option>
-                                       <option value="dansant">dansant</option>
-                                       <option value="karaoke">karaoké</option>
-                                       <option value="aucun">aucun</option>
-                                   </select>
-                                </div>
-                                <div class="form-group col-lg-4">
-                                    <label for="restaurantFav">Votre type de resto favori</label><br />
-                                    <select name="restaurantFav" id="restaurantFav">
-                                       <option value="chaleureux">chaleureux</option>
-                                       <option value="gastronome">gastronome</option>
-                                       <option value="calme">calme</option>
-                                       <option value="rapide">rapide</option>
-                                       <option value="aucun">aucun</option>
-                                   </select>
-                                </div>
-                                <div class="form-group col-lg-4">
-                                    <label for="sortieFav">Votre type de sortie favorite</label><br />
-                                    <select name="sortieFav" id="sortieFav">
-                                       <option value="calme">calme</option>
-                                       <option value="deguisee">déguisée</option>
-                                       <option value="groupe">en groupe</option>
-                                       <option value="gratuite">gratuite</option>
-                                       <option value="aucun">aucun</option>
-                                   </select>
-                                </div>
-
-                                <div class="form-group col-lg-12">
+                                <div class="form-group">
                                     <label for="email">Votre adresse e-mail</label><br />
                                     <input class="form-control" placeholder="E-mail" name="email" type="email" required>
                                 </div>
-                                <div class="form-group col-lg-12">
+                                <div class="form-group">
                                     <label for="password">Votre mot de passe</label><br />
                                     <input class="form-control" placeholder="Mot de passe" name="password" type="password" value="" required>
                                 </div>
+
+                                <!--<div class="form-group">
+                                    <label for="icone">Photo de profil (JPG ou PNG | max. 15 Ko)</label><br />
+                                    <input type="file" name="icone" id="icone" /><br />
+                                </div>-->
+
                                 <!-- Change this to a button or input when using this as a form -->
-                                <div class="form-group col-lg-12">
-                                <a href="/" class="btn btn-lg btn-success btn-block">Inscription</a>
+                                <div class="form-group">
+                                    <input type="hidden" name="utilisateur" value="utilisateur">
+                                <button type="submit" class="btn btn-default">Inscription</button>
                                 </div>
                             </fieldset>
-                        </form>
+                        </form>     <!-- href="/" class="btn btn-lg btn-success btn-block"  -->
                     </div>
                 </div>
             </div>
@@ -131,6 +110,39 @@
 
     Custom Theme JavaScript 
     <script src="js/sb-admin-2.js"></script>-->
+
+    <!--  A rajouter: si on veut liste déroulante   -->
+
+    <!--<div class="form-group col-lg-4">
+        <label for="barFav">Votre type de bar favori</label><br />
+        <select name="barFav" id="barFav">
+           <option value="relaxant">relaxant</option>
+           <option value="musical">musical</option>
+           <option value="dansant">dansant</option>
+           <option value="karaoke">karaoké</option>
+           <option value="aucun">aucun</option>
+       </select>
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="restaurantFav">Votre type de resto favori</label><br />
+        <select name="restaurantFav" id="restaurantFav">
+           <option value="chaleureux">chaleureux</option>
+           <option value="gastronome">gastronome</option>
+           <option value="calme">calme</option>
+           <option value="rapide">rapide</option>
+           <option value="aucun">aucun</option>
+       </select>
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="sortieFav">Votre type de sortie favorite</label><br />
+        <select name="sortieFav" id="sortieFav">
+           <option value="calme">calme</option>
+           <option value="deguisee">déguisée</option>
+           <option value="groupe">en groupe</option>
+           <option value="gratuite">gratuite</option>
+           <option value="aucun">aucun</option>
+       </select>
+    </div>-->    
 
 </body>
 
