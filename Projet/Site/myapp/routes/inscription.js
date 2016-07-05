@@ -11,7 +11,6 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) 
 {
-	var error = 0;
 	var current = new utilisateur({});
 	current.pseudo = req.body.pseudo;
 	current.email = req.body.email;
