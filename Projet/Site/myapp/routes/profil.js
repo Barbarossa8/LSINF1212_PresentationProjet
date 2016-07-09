@@ -23,7 +23,7 @@ router.post('/', function(req, res, next)
 	{
 		if(err) console.log('error');
 		else console.log("Création de l'établissement réussie" + profil);
-		res.redirect('/');
+		res.redirect('/profil');
 	});
 });
 

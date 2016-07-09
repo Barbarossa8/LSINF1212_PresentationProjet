@@ -1,11 +1,11 @@
 var express = require('express');
 var path = require('path');
-var favicon = require('serve-favicon'); //new
+var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-//var MongoDBStore = require('connect-mongodb-session')(session);
+var MongoDBStore = require('connect-mongodb-session')(session);
 
 
 var mongoose = require('mongoose');
@@ -33,14 +33,36 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+var store = new MongoDBStore(
+{
+  uri: 'mongodb://localhost:27017/Site',
+  collection: 'sessions'
+});
+
+store.on('error', function(error) 
+{
+  assert.ifError(error);
+  assert.ok(false);
+});
+
+var sessionA = {
+  secret: "antoine",
+  resave: true,
+  saveUninitialized: true,
+  proxy: false,
+  store: store
+};
+
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(session({secret: 'antoine'}));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session(sessionA));
 
 app.use('/', routes);
 app.use('/rechercheBoire', rechercheBoire);

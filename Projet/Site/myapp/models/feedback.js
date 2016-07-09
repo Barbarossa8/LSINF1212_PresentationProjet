@@ -7,7 +7,7 @@ var Schema = mongoose.Schema;
 var feedbackSchema = new mongoose.Schema({
 	nomEta: String,		//Le nom de l'établissements où il y a la note
     note: String,	//Note du feedback
-    description: String,	//sa description
+    commentaire: String,	//sa description
     pseudo: { type : String, match: /^[a-zA-Z0-9-_]+$/ },	//Utilisateur qui l'a postée
     date: { type : Date, default : Date.now }	//La date du post
 });
