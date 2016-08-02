@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var feedback = require('../models/feedback.js').feedback;
+var etablissement = require('../models/etablissement.js').etablissement;
 var mongoose = require('mongoose');
 
 //RESTE: - mettre les intent
@@ -8,9 +9,34 @@ var mongoose = require('mongoose');
 
 /* access to manger */
 router.get('/', function(req, res, next) {
-    res.render('manger', {});
-	return res.status(200).send(); // everything is ok
+	res.redirect('rechercheManger', {}); // choose smth first
 });
+
+router.get('/:nom', function(req, res, next) {
+	var nom = req.params.nom;
+	etablissement.findOne({nom : nom}, function(err, etab)
+	{
+		if (err) //error
+		{
+			console.log(err);
+			res.render('rechercheManger', {});
+		}
+
+		if (!etab) //not found
+		{
+			console.log("Etablissement non trouvé");
+			res.render('rechercheManger', {});
+		}
+
+		else //found
+		{
+			console.log("Etablissement trouvé");
+			res.render('manger',{etablissement : etab });
+		}
+	});
+});
+
+
 
 router.post('/', function(req, res, next) 
 {

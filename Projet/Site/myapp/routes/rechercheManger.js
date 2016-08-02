@@ -11,11 +11,4 @@ router.get('/', function(req, res, next)
 	});
 });
 
-router.post('/', function (req,res)
-{
-	var name = req.body.nom
-	
-});
-
-
 module.exports = router;

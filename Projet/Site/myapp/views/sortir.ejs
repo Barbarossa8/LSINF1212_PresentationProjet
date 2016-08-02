@@ -19,18 +19,17 @@
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">Sortie :
-                        <strong>Nom de la sortie</strong>
+                        <strong><%= etablissement.nom%></strong>
                     </h2>
                     <hr>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/soiree.jpg" alt="">
+                    <img class="img-responsive img-border-left" src="../img/soiree.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <p>Description plus détaillée de la sortie.</p>
-                    <p>Détails concernant l'endroit</p>
-                    <p>Détails concernant l'établissement</p>
-                    <p>Détails concernant l'heure</p>
+                    <p><%= etablissement.description%></p>
+                    <p><%= etablissement.cat%></p>
+                    <p><%= etablissement.horraire%></p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -106,10 +105,10 @@
     <% include ../views/layout/footer.ejs %>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 
