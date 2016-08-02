@@ -53,24 +53,24 @@
                     </h2>
                     <hr>
                     <p>Vous avez des questions sur notre site ? Des conseils à nous donner ? Des remarques constuctives et pertinentes ? Envoyez-nous donc un e-mail nous vous répondrons dès que possible.</p>
-                    <form role="form">
+                    <form role="form" method="post" action="contact/send">
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Nom</label>
-                                <input type="text" class="form-control" required>
+                                <input type="text" name="nom" class="form-control" required>
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Adresse E-mail</label>
-                                <input type="email" class="form-control" required>
+                                <input type="email" name="mail" class="form-control" required>
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Numéro de téléphone</label>
-                                <input type="tel" class="form-control">
+                                <input type="tel" name="tel" class="form-control">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <label>Message</label>
-                                <textarea class="form-control" rows="6" required></textarea>
+                                <textarea class="form-control" name="mess" rows="6" required></textarea>
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
