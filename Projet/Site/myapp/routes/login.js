@@ -1,40 +1,43 @@
 
 var express = require('express');
 var router = express.Router();
+var utilisateur = require('../models/utilisateur.js').utilisateur;
 var mongoose = require('mongoose');
 
-/* GET login */
+/* access to login */
 router.get('/', function(req, res, next) {
     res.render('login', {login_error: 0, mdp_error: 0});
 });
 
+/* connection */
 router.post('/', function(req, res, done)
 {
-	utilisateur.findOne({pseudo : req.body.pseudo}, function(error, utilisateur)
+    var username = req.body.pseudo;
+    var password = req.body.password;
+    
+	utilisateur.findOne({pseudo : username, password: password}, function(err, utilisateur)
 	{
-		if (error) {
-			console.log("Erreur: Pas dans la DB inscrire d'abord");
-			res.render('login', {login_error : 1, mdp_error: 0})
+		if (err) //error
+        {
+			console.log(err);
+			res.render('/login', {login_error : 0, mdp_error: 0});
 		}
-		if (!utilisateur)
+
+		if (!utilisateur) //not found
 		{
-			console.log("Pseudo incorrect");
-			res.render('login', {login_error : 1, mdp_error: 0})
+			console.log("Echec d'identification");
+			res.render('/login', {login_error : 1, mdp_error: 0});
 		}
-		else if (utilisateur.password !== req.body.password)
-		{
-			console.log("Mot de passe incorrect");
-			res.render('login', {login_error : 0, mdp_error: 1})
-		}
-		else
+
+		else //found
 		{
 			console.log("Connexion réussie");
-			req.session.pseudo = utilisateur.pseudo;
+			req.session.user = username;
 			req.session.logged = 1;
 			res.redirect('/');
+            return res.status(200).send(); // ok
 		}
-	})
-	res.redirect('/login');
+	});
 });
 
 module.exports = router;

@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 /* GET boire */
 router.get('/', function(req, res, next) {
-    res.render('boire', {});
+	res.render('boire', {});
 });
 
 router.post('/', function(req, res, next) 
