@@ -7,6 +7,10 @@ var mongoose = require('mongoose');
 
 /* GET profil */
 router.get('/', function(req, res, next) {
+	if(!req.session.user){
+		res.redirect('login');
+		return res.status(401).send();
+	}
     var mail;
 	utilisateur.findOne({pseudo : req.session.user}, function(err, utilisateur)
 	{
@@ -15,7 +19,6 @@ router.get('/', function(req, res, next) {
 			console.log(err);
 			res.render('/login', {login_error : 0, mdp_error: 0});
 			req.session.destroy();
-			return res.status(500).send(); //internal error
 		}
 
 		if (!utilisateur) //not found
@@ -23,7 +26,6 @@ router.get('/', function(req, res, next) {
 			console.log("Utilisateur non trouvé");
 			res.render('/login', {login_error : 0, mdp_error: 0});
 			req.session.destroy();
-			return res.status(404).send(); // malformed request
 		}
 
 		else //found
@@ -31,7 +33,6 @@ router.get('/', function(req, res, next) {
 			console.log("Utilisateur trouvé");
 			mail = utilisateur.email;
 			res.render('profil', {pseudo:req.session.user, mail:mail});
-			return res.status(200).send(); // ok
 		}
 	});
 

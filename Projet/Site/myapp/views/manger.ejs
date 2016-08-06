@@ -44,14 +44,20 @@
                 </h2>
                 <hr>
             </div>
+
+            <% for(var i = 0 ; i < feedback.length ; i++){ %>
             <div class="col-sm-6 text-center">
-                <h3>Nom utilisateur
-                    <small>Nombre d'étoiles</small>
+
+                <h3><%=feedback[i].pseudo%>
+                    <small><%=feedback[i].note%></small>
                 </h3>
-                <p>Le commentaire de l'utilisateur</p>
+                <p><%=feedback[i].commentaire%></p>
             </div>
             <div class="clearfix"></div>
+            <% }%>
+
         </div>
+
     </div>
     <div class="row">
         <div class="box">

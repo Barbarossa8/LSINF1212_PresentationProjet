@@ -4,10 +4,24 @@ var etablissements = require('../models/etablissement.js').etablissement;
 
 /* GET rechercheSortir. */
 router.get('/', function(req, res, next) {
-    etablissements.find({type : 'sortie'}, function(error, etablissements)
+
+	if(!req.session.user){
+		res.redirect('login');
+		return res.status(401).send();
+	}
+	var filtre = req.query.filtre;
+	if (!filtre) //si pas de filtre -> affiche tout
 	{
-		res.render('rechercheSortir', {etablissements : etablissements});
-	});
+		etablissements.find({type : 'sortie'}, function(error, etablissements)
+		{
+			res.render('rechercheSortir', {etablissements : etablissements});
+		});
+	}
+	else //si filtre -> on filtre
+		etablissements.find({type : 'sortie', cat : filtre}, function(error, etablissements)
+		{
+			res.render('rechercheSortir', {etablissements : etablissements});
+		});
 });
 
 module.exports = router;

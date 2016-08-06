@@ -6,10 +6,23 @@ var mongoose = require('mongoose');
 /* GET rechercheBoire */
 router.get('/', function(req, res, next) 
 {
-	etablissements.find({type : 'bar'}, function(error, etablissements)
+	if(!req.session.user){
+		res.redirect('login');
+		return res.status(401).send();
+	}
+	var filtre = req.query.filtre;
+	if (!filtre) //si pas de filtre -> affiche tout
 	{
-		res.render('rechercheBoire', {etablissements : etablissements});
-	});
+		etablissements.find({type : 'bar'}, function(error, etablissements)
+		{
+			res.render('rechercheBoire', {etablissements : etablissements});
+		});
+	}
+	else //si filtre -> on filtre
+		etablissements.find({type : 'bar', cat : filtre }, function(error, etablissements)
+		{
+			res.render('rechercheBoire', {etablissements : etablissements});
+		});
 });
 
 module.exports = router;
