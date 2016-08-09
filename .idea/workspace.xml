@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4903801-d363-4c01-bee4-a6806f2453d0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Projet/Site/myapp/views/test.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Projet/Site/myapp/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/app.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/node_modules/.bin/semver" afterPath="$PROJECT_DIR$/Projet/Site/myapp/node_modules/.bin/semver" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/package.json" afterPath="$PROJECT_DIR$/Projet/Site/myapp/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/boire.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/boire.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/contact.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/contact.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/inscription.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/inscription.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/index.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/login.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/logout.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/logout.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/manger.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/manger.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/profil.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/profil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheBoire.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheBoire.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheManger.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheManger.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheSortir.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheSortir.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/routes/sortir.js" afterPath="$PROJECT_DIR$/Projet/Site/myapp/routes/sortir.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/views/boire.ejs" afterPath="$PROJECT_DIR$/Projet/Site/myapp/views/boire.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/views/layout/navigation-bar.ejs" afterPath="$PROJECT_DIR$/Projet/Site/myapp/views/layout/navigation-bar.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/views/manger.ejs" afterPath="$PROJECT_DIR$/Projet/Site/myapp/views/manger.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheBoire.ejs" afterPath="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheBoire.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheManger.ejs" afterPath="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheManger.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheSortir.ejs" afterPath="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheSortir.ejs" />
     </list>
     <ignored path="LSINF1212_PresentationProjet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,51 +39,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="manger.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/manger.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-984">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="manger.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/manger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/logout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inscription.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/inscription.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="334">
+              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -95,48 +62,18 @@
       <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="442">
+              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boire.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/boire.js">
+      <file leaf-file-name="contact.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/contact.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sortir.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/sortir.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/layout/header.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation-bar.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/layout/navigation-bar.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="425">
+              <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -166,23 +103,24 @@
         <option value="$PROJECT_DIR$/Projet/Site/myapp/views/login.ejs" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/views/inscription.ejs" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/views/index.ejs" />
-        <option value="$PROJECT_DIR$/Projet/Site/myapp/app.js" />
-        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/index.js" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheBoire.ejs" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheSortir.ejs" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/views/rechercheManger.ejs" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/inscription.js" />
-        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/login.js" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/logout.js" />
-        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/contact.js" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/views/layout/navigation-bar.ejs" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/app.js" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/login.js" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/sortir.js" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheSortir.js" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheManger.js" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheBoire.js" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/profil.js" />
-        <option value="$PROJECT_DIR$/Projet/Site/myapp/views/layout/navigation-bar.ejs" />
-        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/boire.js" />
-        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/sortir.js" />
         <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/manger.js" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/index.js" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/contact.js" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/routes/boire.js" />
+        <option value="$PROJECT_DIR$/Projet/Site/myapp/views/manger.ejs" />
       </list>
     </option>
   </component>
@@ -192,10 +130,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-29" />
+    <option name="y" value="115" />
+    <option name="width" value="1370" />
+    <option name="height" value="629" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -388,6 +326,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -764,15 +703,15 @@
       <updated>1469986003302</updated>
       <workItem from="1469986013009" duration="12452000" />
       <workItem from="1470246811434" duration="79000" />
-      <workItem from="1470505667201" duration="7819000" />
+      <workItem from="1470505667201" duration="11850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20350000" />
+    <option name="totallyTimeSpent" value="24381000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-29" y="115" width="1370" height="629" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -785,8 +724,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23499268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23707533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -797,7 +737,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -862,6 +801,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -915,13 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/models/utilisateur.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -951,14 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/contact.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="76" column="77" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/rechercheBoire.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -983,78 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheSortir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheManger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheBoire.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/profil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/logout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/inscription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/layout/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1071,26 +924,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/sortir.js">
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
+        <state relative-caret-position="-136">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/manger.js">
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/sortir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        <state relative-caret-position="453">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheSortir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/inscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/boire.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="317">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheManger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/rechercheBoire.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/profil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/contact.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/routes/manger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Site/myapp/views/manger.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-984">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding />
         </state>
       </provider>

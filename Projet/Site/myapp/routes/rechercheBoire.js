@@ -8,7 +8,6 @@ router.get('/', function(req, res, next)
 {
 	if(!req.session.user){
 		res.redirect('login');
-		return res.status(401).send();
 	}
 	var filtre = req.query.filtre;
 	if (!filtre) //si pas de filtre -> affiche tout

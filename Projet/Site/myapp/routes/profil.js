@@ -9,7 +9,6 @@ var mongoose = require('mongoose');
 router.get('/', function(req, res, next) {
 	if(!req.session.user){
 		res.redirect('login');
-		return res.status(401).send();
 	}
     var mail;
 	utilisateur.findOne({pseudo : req.session.user}, function(err, utilisateur)
@@ -17,20 +16,18 @@ router.get('/', function(req, res, next) {
 		if (err) //error
 		{
 			console.log(err);
-			res.render('/login', {login_error : 0, mdp_error: 0});
+			res.render('login', {login_error : 0, mdp_error: 0});
 			req.session.destroy();
 		}
 
 		if (!utilisateur) //not found
 		{
-			console.log("Utilisateur non trouvé");
-			res.render('/login', {login_error : 0, mdp_error: 0});
+			res.render('login', {login_error : 0, mdp_error: 0});
 			req.session.destroy();
 		}
 
 		else //found
 		{
-			console.log("Utilisateur trouvé");
 			mail = utilisateur.email;
 			res.render('profil', {pseudo:req.session.user, mail:mail});
 		}

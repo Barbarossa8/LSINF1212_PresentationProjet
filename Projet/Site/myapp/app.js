@@ -8,6 +8,7 @@ var session = require('express-session');
 var MongoDBStore = require('connect-mongodb-session')(session);
 
 
+
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/Site');
 
@@ -33,26 +34,6 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-/*
-var store = new MongoDBStore(
-{
-  uri: 'mongodb://localhost:27017/Site',
-  collection: 'sessions'
-});
-
-store.on('error', function(error) 
-{
-  assert.ifError(error);
-  assert.ok(false);
-});
-
-var sessionA = {
-  secret: "antoine",
-  resave: true,
-  saveUninitialized: true,
-  proxy: false,
-  store: store
-};*/
 
 
 // uncomment after placing your favicon in /public

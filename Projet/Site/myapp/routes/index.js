@@ -5,7 +5,6 @@ var router = express.Router();
 router.get('/', function(req, res) {
   if(!req.session.user){
     res.redirect('login');
-    return res.status(401).send();
   }
   else 
   {

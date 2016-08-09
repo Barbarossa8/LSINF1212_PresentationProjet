@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 
 /* POST contact us*/
 router.post('/send', function (req,res,next) {
+    /* identification */
     var transporter = nodemailer.createTransport({
         service:'Gmail',
         auth:{
@@ -17,6 +18,7 @@ router.post('/send', function (req,res,next) {
         }
     });
 
+    /* contenu du mail + informations */
     var mailOptions ={
         from: 'Le Rendez-Vous <le.rendez.vous.1212@gmail.com>',
         to: 'le.rendez.vous.1212@gmail.com',
@@ -25,6 +27,7 @@ router.post('/send', function (req,res,next) {
         html: 'Recomendation de : '+req.body.nom + '<br> Adresse mail : '+ req.body.mail +'<br> Numéro de gsm : ' + req.body.tel +'<br> Message : '+req.body.mess
     };
 
+    /* utilisation du transporter pour l'envoi */
     transporter.sendMail(mailOptions, function (err, info) {
         if(err) {
             console.log(err);

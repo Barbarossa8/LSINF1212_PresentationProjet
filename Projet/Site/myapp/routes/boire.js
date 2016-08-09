@@ -9,7 +9,6 @@ var mongoose = require('mongoose');
 router.get('/:nom', function(req, res, next) {
 	if(!req.session.user){
 		res.redirect('login');
-		return res.status(401).send();
 	}
 	var nom = req.params.nom;
 	var current;
@@ -27,13 +26,11 @@ router.get('/:nom', function(req, res, next) {
 
 		if (!etab) //not found
 		{
-			console.log("Etablissement non trouvé");
 			res.render('rechercheBoire', {});
 		}
 
 		else //found
 		{
-			console.log("Etablissement trouvé");
 			current = etab;
 		}
 	});
@@ -46,7 +43,6 @@ router.get('/:nom', function(req, res, next) {
 		}
 		else //found
 		{
-			console.log("Commentaire trouvé");
 			res.render('boire',{etablissement : current, feedback: feed });
 		}
 	});
@@ -65,13 +61,11 @@ router.post('/:etablissement', function(req, res, next)
 		if(err)
 		{
 			console.log(err);
-			return res.status(500).send(); // internal error
 		}
 		else
 		{
 			console.log("Création du feedback réussie" + boire);
 			res.redirect(req.get('referer'));
-			return res.status(201).send(); //new ressource created
 		}
 	});
 });

@@ -9,7 +9,6 @@ var mongoose = require('mongoose');
 router.get('/:nom', function(req, res, next) {
 	if(!req.session.user){
 		res.redirect('login');
-		return res.status(401).send();
 	}
 	var nom = req.params.nom;
 	var current;

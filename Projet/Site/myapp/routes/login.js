@@ -1,4 +1,3 @@
-
 var express = require('express');
 var router = express.Router();
 var utilisateur = require('../models/utilisateur.js').utilisateur;
@@ -20,18 +19,17 @@ router.post('/', function(req, res, done)
 		if (err) //error
         {
 			console.log(err);
-			res.render('/login', {login_error : 0, mdp_error: 0});
+			res.render('login', {login_error : 0, mdp_error: 0});
 		}
 		if (!utilisateur) //not found
 		{
-			res.render('/login', {login_error : 1, mdp_error: 0});
+			res.render('login', {login_error : 1, mdp_error: 0});
 		}
 		else //found
 		{
 			req.session.user = username;
 			req.session.logged = 1;
 			res.redirect('/');
-            return res.status(200).send(); // ok
 		}
 	});
 });
