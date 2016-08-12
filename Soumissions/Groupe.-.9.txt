@@ -1,2 +1,0 @@
-Nous pourrons via la barre de navigation aller dans les différentes sections du sites tel que les bars ou les informations de notre compte.
-Le nombre de page de notre application web n'est pas encore définie mais nous y travaillons pour éviter d'inclure des pages qui seront inutile à l'application.

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../views/layout/header.ejs %>
+</head>
+
+<body>
+
+<div class="brand">Le rendez-vous !</div>
+<div class="address-bar">1, Place Sainte-Barbe | Ottignies-Louvain-la-Neuve, Belgique 1348| 0473/32.86.85</div>
+
+<% include ../views/layout/navigation-bar.ejs %>
+
+<div class="container">
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                    <h2 class="intro-text text-center">
+                        <strong><%= etablissement.nom%></strong>
+                    </h2>
+                <hr>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive img-border-left" src="../img/bar.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+                <p><%= etablissement.description%></p>
+                <p><%= etablissement.cat%></p>
+                <p><%= etablissement.horraire%></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                    <h2 class="intro-text text-center">Les
+                        <strong>Commentaires</strong>
+                    </h2>
+                <hr>
+
+                <% for(var i = 0 ; i < feedback.length ; i++){ %>
+                <h3><%=feedback[i].pseudo%>
+                    <small><%=feedback[i].note%></small>
+                </h3>
+                <p><%=feedback[i].commentaire%></p>
+                <% }%>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                    <h2 class="intro-text text-center">Laissez un
+                        <strong>commentaire</strong>
+                    </h2>
+                <hr>
+                <p>Vous avez apprécié ou au contraire détesté ? Faites le nous savoir !</p>
+
+                <form role="form" method="post">
+                    <div class="row">
+
+                        <div class="form-group col-lg-4">
+                            <label for="note">Note entre 0 et 5</label><br />
+
+                            <select name="note" id="note">
+
+                                <option value="0">0</option>
+
+                                <option value="1">1</option>
+
+                                <option value="2">2</option>
+
+                                <option value="3">3</option>
+
+                                <option value="4">4</option>
+
+                                <option value="5">5</option>
+
+                            </select>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="form-group col-lg-8">
+                            <label for="commentaire">Commentaire :</label>
+                            <textarea name="commentaire" class="form-control" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group col-lg-12">
+                            <input type="hidden" name="feedback" value="contact">
+                            <button type="submit" class="btn btn-default">Soumettre</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<% include ../views/layout/footer.ejs %>
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
