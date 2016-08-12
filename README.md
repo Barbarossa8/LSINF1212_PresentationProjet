@@ -1,7 +1,7 @@
-**********************************************************
+
 	                  	# Le Rendez-Vous
 	                 ##### by @Barbarossa8 Antoine Denauw et @decarvalhobo Antonio DCB
-**********************************************************
+
 Pour installer l'application:
  1. ouvrez un terminal dans le dossier myapp et entrez : 'npm install'
  2. ouvrez un terminal dans le dossier myapp et entrez : 'node db_init.js'
