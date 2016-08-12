@@ -8,7 +8,7 @@ Pour installer l'application:
 
 Pour démarer l'application:
  1. ouvrez un terminal et entrez : `mongod`
- (2.) pour soummetre et recevoir des recommendations via la page /contact,
+ 2. pour soummetre et recevoir des recommendations via la page /contact,
   il faut se connecter au préalable sur Gmail avec l'identifiant suivant:
  	id : le.rendez.vous.1212@gmail.com
  	mp : lsinf1212
