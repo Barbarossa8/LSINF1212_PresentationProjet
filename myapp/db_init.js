@@ -11,9 +11,9 @@ var etab_db = require('./models/etablissement.js').etablissement;
 var feed_db = require('./models/feedback.js').feedback;
 
 /* Utilisateurs */
-var u1 = new user_db({pseudo: 'MarcoPolo' ,mail:'marco.polo@gmail.com',password:'mp'});
-var u2 = new user_db({pseudo: 'JeanJass' ,mail:'jean.jass@gmail.com',password:'jj'});
-var u3 = new user_db({pseudo: 'MittRomney' ,mail:'mitt.romney@gmail.com',password:'usa'});
+var u1 = new user_db({pseudo: 'MarcoPolo' ,email:'marco.polo@gmail.com',password:'mp'});
+var u2 = new user_db({pseudo: 'JeanJass' ,email:'jean.jass@gmail.com',password:'jj'});
+var u3 = new user_db({pseudo: 'MittRomney' ,email:'mitt.romney@gmail.com',password:'usa'});
 
 /* Etablissements */
     /* Restaurants */
