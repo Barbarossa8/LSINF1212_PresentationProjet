@@ -10,7 +10,7 @@ var MongoDBStore = require('connect-mongodb-session')(session);
 
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/Site');
+mongoose.connect('mongodb://localhost/LeRDV');
 
 
 var routes = require('./routes/index'); //brains

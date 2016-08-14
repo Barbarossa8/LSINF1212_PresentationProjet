@@ -3,7 +3,7 @@
  */
 var express = require('express');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/Site');
+mongoose.connect('mongodb://localhost/LeRDV');
 
 /* import des modèles */
 var user_db = require('./models/utilisateur.js').utilisateur;
@@ -17,23 +17,23 @@ var u3 = new user_db({pseudo: 'MittRomney' ,mail:'mitt.romney@gmail.com',passwor
 
 /* Etablissements */
     /* Restaurants */
-var e1 = new etab_db({nom:'La Galoute',description:'Taverne - restaurant, située dans le centre de Louvain - La - Neuve. Accueil sympa, souriant et chaleureuse. Vaste gamme de plats, à des prix démocratiques et service rapide. Nous mettons un point d\'honneur à la qualité et au service de nos plats et bierès spéciales.',cat:'calme',horraire:'Ouvert du lundi au samedi de 12h à 23h',type:'restaurant'});
-var e2 = new etab_db({nom:'Le Rablais',description:'Une Brasserie unique dans son concept culinaire oriental et très cosmopolite, portée par un univers architectural reflétant cette découverte du monde.',cat:'gastronome',horraire:'Ouvert toute la semaine de 12h à 23h sauf le samedi',type:'restaurant'});
-var e3 = new etab_db({nom:'Le Piano',description:'Restaurant cotoyé par de nombreux étudiants depuis des dizaines d\'années pour des soupers ou bien juste pour se remplir le ventre avant une bonne soirée',cat:'rapide',horraire:'Ouvert toute la semaine de 12h à 23h sauf le samedi',type:'restaurant'});
-var e4 = new etab_db({nom:'Le Cellule Sush',description:'Petit restaurant louvaniste fondé par deux chaleureux étudiants amoureux des sushis',cat:'chaleureux',horraire:'Ouvert de 12h à 14h et le soir de 18h à 21h30 ',type:'restaurant'});
-var e5 = new etab_db({nom:'Le Zanzibar',description:'Mini-centrale à hamburger de Louvain-la-Neuve, venez y déguster les meilleurs hamburgers du campus',cat:'rapide',horraire:'ouvert de 12h à 23h',type:'restaurant'});
+var e1 = new etab_db({nom:'La Galoute',description:'Taverne - restaurant, située dans le centre de Louvain - La - Neuve. Accueil sympa, souriant et chaleureuse. Vaste gamme de plats, à des prix démocratiques et service rapide. Nous mettons un point d\'honneur à la qualité et au service de nos plats et bierès spéciales.',cat:'calme',horaire:'Ouvert du lundi au samedi de 12h à 23h',type:'restaurant'});
+var e2 = new etab_db({nom:'Le Rablais',description:'Une Brasserie unique dans son concept culinaire oriental et très cosmopolite, portée par un univers architectural reflétant cette découverte du monde.',cat:'gastronome',horaire:'Ouvert toute la semaine de 12h à 23h sauf le samedi',type:'restaurant'});
+var e3 = new etab_db({nom:'Le Piano',description:'Restaurant cotoyé par de nombreux étudiants depuis des dizaines d\'années pour des soupers ou bien juste pour se remplir le ventre avant une bonne soirée',cat:'rapide',horaire:'Ouvert toute la semaine de 12h à 23h sauf le samedi',type:'restaurant'});
+var e4 = new etab_db({nom:'Le Cellule Sush',description:'Petit restaurant louvaniste fondé par deux chaleureux étudiants amoureux des sushis',cat:'chaleureux',horaire:'Ouvert de 12h à 14h et le soir de 18h à 21h30 ',type:'restaurant'});
+var e5 = new etab_db({nom:'Le Zanzibar',description:'Mini-centrale à hamburger de Louvain-la-Neuve, venez y déguster les meilleurs hamburgers du campus',cat:'rapide',horaire:'ouvert de 12h à 23h',type:'restaurant'});
     /* Bar */
-var e6 = new etab_db({nom:'Le Beerbar',description:'Venez y déguster une, deux, trois, quatre... bierre du Pays entouré de bons camarades dans la joie et la bonne humeur.',cat:'musical',horraire:'Ouvert tout les jours de 12h à minuit',type:'bar'});
-var e7 = new etab_db({nom:'Le Becketts',description:'Bar se situant à droite du Cinéscope vous offrant divertissement et rafraichissement tout au long de la soirée dans une ambiance tantôt latino et tantôt R&B',cat:'dansant',horraire:'Ouvert tout les jours de 14h à minuit',type:'bar'});
-var e8 = new etab_db({nom:'Onlywood',description:'Dégustez seul tel un intrépide ou à plusieurs les giraffes proposées en espérant que vous finirez sur le bar entrain de chanter sans peur',cat:'karaoké',horraire:'Ouvert tout les jours de 11h à minuit',type:'bar'});
-var e9 = new etab_db({nom:'Le Brasse-temps',description:'Vous voulez brasser du temps dans un endroit qui brasse? Venez au Brasse-temps ! Une sélection de bierres brassées sur place vous y attend!',cat:'relaxant',horraire:'Ouvert tout les jours de 10h à minuit',type:'bar'});
-var e10 = new etab_db({nom:'La Gaudeamus',description:'Venez vous relaxer dans ce bar discret de Louvain-la-Neuve. Un service exemplaire qui dure depuis des décénnies',cat:'relaxant',horraire:'Ouvert tout les jours de 10h à minuit',type:'bar'});
+var e6 = new etab_db({nom:'Le Beerbar',description:'Venez y déguster une, deux, trois, quatre... bierre du Pays entouré de bons camarades dans la joie et la bonne humeur.',cat:'musical',horaire:'Ouvert tout les jours de 12h à minuit',type:'bar'});
+var e7 = new etab_db({nom:'Le Becketts',description:'Bar se situant à droite du Cinéscope vous offrant divertissement et rafraichissement tout au long de la soirée dans une ambiance tantôt latino et tantôt R&B',cat:'dansant',horaire:'Ouvert tout les jours de 14h à minuit',type:'bar'});
+var e8 = new etab_db({nom:'Onlywood',description:'Dégustez seul tel un intrépide ou à plusieurs les giraffes proposées en espérant que vous finirez sur le bar entrain de chanter sans peur',cat:'karaoké',horaire:'Ouvert tout les jours de 11h à minuit',type:'bar'});
+var e9 = new etab_db({nom:'Le Brasse-temps',description:'Vous voulez brasser du temps dans un endroit qui brasse? Venez au Brasse-temps ! Une sélection de bierres brassées sur place vous y attend!',cat:'relaxant',horaire:'Ouvert tout les jours de 10h à minuit',type:'bar'});
+var e10 = new etab_db({nom:'La Gaudeamus',description:'Venez vous relaxer dans ce bar discret de Louvain-la-Neuve. Un service exemplaire qui dure depuis des décénnies',cat:'relaxant',horaire:'Ouvert tout les jours de 10h à minuit',type:'bar'});
     /* Sortie*/
-var e11 = new etab_db({nom:'Casa',description:'Endroit mythique de Louvain où vous pourrez faire de drôles de rencontre en y croisant peut-être un de vos professeurs!',cat:'gratuite',horraire:'Ouvert tout le temps',type:'sortie'});
-var e12 = new etab_db({nom:'Le Maska',description:'Vous avez toujours eu envie d\'arriver en soirée pour profiter un maximum sans que les gens vous reconnaissent ? Alors notre établissement vous attends !',cat:'déguisé',horraire:'Ouvert tout les week-end de 20H à 23H',type:'sortie'});
-var e13 = new etab_db({nom:'Le Bouddha',description:'Soirée calme rythmée par de la chillstep pour se détendre le week-end.',cat:'calme',horraire:'Ouvert tout les week-end de 18H à minuit',type:'sortie'});
-var e14 = new etab_db({nom:'Le Mezzo',description:'Boîte de nuit avec soirées à thème où vous pourrez danser au rythme de nos meilleurs DJ.',cat:'groupe',horraire:'Ouvert tout les week-end de 21H à 03H',type:'sortie'});
-var e15 = new etab_db({nom:'Le Marschmallow',description:'Venez vous amusez dans des soirées complètement décalées au rythme de Drum n\'Bass jusqu\'au bout de la nuit',cat:'groupe',horraire:'Ouvert de 22h à 5h du matin ',type:'sortie'});
+var e11 = new etab_db({nom:'Casa',description:'Endroit mythique de Louvain où vous pourrez faire de drôles de rencontre en y croisant peut-être un de vos professeurs!',cat:'gratuite',horaire:'Ouvert tout le temps',type:'sortie'});
+var e12 = new etab_db({nom:'Le Maska',description:'Vous avez toujours eu envie d\'arriver en soirée pour profiter un maximum sans que les gens vous reconnaissent ? Alors notre établissement vous attends !',cat:'déguisé',horaire:'Ouvert tout les week-end de 20H à 23H',type:'sortie'});
+var e13 = new etab_db({nom:'Le Bouddha',description:'Soirée calme rythmée par de la chillstep pour se détendre le week-end.',cat:'calme',horaire:'Ouvert tout les week-end de 18H à minuit',type:'sortie'});
+var e14 = new etab_db({nom:'Le Mezzo',description:'Boîte de nuit avec soirées à thème où vous pourrez danser au rythme de nos meilleurs DJ.',cat:'groupe',horaire:'Ouvert tout les week-end de 21H à 03H',type:'sortie'});
+var e15 = new etab_db({nom:'Le Marschmallow',description:'Venez vous amusez dans des soirées complètement décalées au rythme de Drum n\'Bass jusqu\'au bout de la nuit',cat:'groupe',horaire:'Ouvert de 22h à 5h du matin ',type:'sortie'});
 
 
 /* Feedback */
@@ -70,4 +70,4 @@ for (var i=0 ; i < element_to_add.length ;i++)
 
 setTimeout(function(){
     throw( "Pas d'erreur, arrêt du script JS" );
-}, 7000);
+}, 5000);
