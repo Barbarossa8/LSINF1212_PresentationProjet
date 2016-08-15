@@ -25,12 +25,12 @@ var e5 = new etab_db({nom:'Le Zanzibar',description:'Mini-centrale à hamburger 
     /* Bar */
 var e6 = new etab_db({nom:'Le Beerbar',description:'Venez y déguster une, deux, trois, quatre... bierre du Pays entouré de bons camarades dans la joie et la bonne humeur.',cat:'musical',horaire:'Ouvert tout les jours de 12h à minuit',type:'bar'});
 var e7 = new etab_db({nom:'Le Becketts',description:'Bar se situant à droite du Cinéscope vous offrant divertissement et rafraichissement tout au long de la soirée dans une ambiance tantôt latino et tantôt R&B',cat:'dansant',horaire:'Ouvert tout les jours de 14h à minuit',type:'bar'});
-var e8 = new etab_db({nom:'Onlywood',description:'Dégustez seul tel un intrépide ou à plusieurs les giraffes proposées en espérant que vous finirez sur le bar entrain de chanter sans peur',cat:'karaoké',horaire:'Ouvert tout les jours de 11h à minuit',type:'bar'});
+var e8 = new etab_db({nom:'Onlywood',description:'Dégustez seul tel un intrépide ou à plusieurs les giraffes proposées en espérant que vous finirez sur le bar entrain de chanter sans peur',cat:'karaoke',horaire:'Ouvert tout les jours de 11h à minuit',type:'bar'});
 var e9 = new etab_db({nom:'Le Brasse-temps',description:'Vous voulez brasser du temps dans un endroit qui brasse? Venez au Brasse-temps ! Une sélection de bierres brassées sur place vous y attend!',cat:'relaxant',horaire:'Ouvert tout les jours de 10h à minuit',type:'bar'});
 var e10 = new etab_db({nom:'La Gaudeamus',description:'Venez vous relaxer dans ce bar discret de Louvain-la-Neuve. Un service exemplaire qui dure depuis des décénnies',cat:'relaxant',horaire:'Ouvert tout les jours de 10h à minuit',type:'bar'});
     /* Sortie*/
-var e11 = new etab_db({nom:'Casa',description:'Endroit mythique de Louvain où vous pourrez faire de drôles de rencontre en y croisant peut-être un de vos professeurs!',cat:'gratuite',horaire:'Ouvert tout le temps',type:'sortie'});
-var e12 = new etab_db({nom:'Le Maska',description:'Vous avez toujours eu envie d\'arriver en soirée pour profiter un maximum sans que les gens vous reconnaissent ? Alors notre établissement vous attends !',cat:'déguisé',horaire:'Ouvert tout les week-end de 20H à 23H',type:'sortie'});
+var e11 = new etab_db({nom:'Casa',description:'Endroit mythique de Louvain où vous pourrez faire de drôles de rencontre en y croisant peut-être un de vos professeurs!',cat:'gratuit',horaire:'Ouvert tout le temps',type:'sortie'});
+var e12 = new etab_db({nom:'Le Maska',description:'Vous avez toujours eu envie d\'arriver en soirée pour profiter un maximum sans que les gens vous reconnaissent ? Alors notre établissement vous attends !',cat:'deguise',horaire:'Ouvert tout les week-end de 20H à 23H',type:'sortie'});
 var e13 = new etab_db({nom:'Le Bouddha',description:'Soirée calme rythmée par de la chillstep pour se détendre le week-end.',cat:'calme',horaire:'Ouvert tout les week-end de 18H à minuit',type:'sortie'});
 var e14 = new etab_db({nom:'Le Mezzo',description:'Boîte de nuit avec soirées à thème où vous pourrez danser au rythme de nos meilleurs DJ.',cat:'groupe',horaire:'Ouvert tout les week-end de 21H à 03H',type:'sortie'});
 var e15 = new etab_db({nom:'Le Marschmallow',description:'Venez vous amusez dans des soirées complètement décalées au rythme de Drum n\'Bass jusqu\'au bout de la nuit',cat:'groupe',horaire:'Ouvert de 22h à 5h du matin ',type:'sortie'});
@@ -48,7 +48,7 @@ var f6 = new feed_db({ nomEta:'Le Beerbar', note:'4/5', commentaire:'Un jour je 
 var f7 = new feed_db({ nomEta:'Le Becketts', note:'3/5', commentaire:'Cher pour une bierre mais bonnes terrasses', pseudo:'JeanJass'});
 var f8 = new feed_db({ nomEta:'Onlywood', note:'2/5', commentaire:'Aucune ambiance mais très peu cher!', pseudo:'JeanJass'});
 var f9 = new feed_db({ nomEta:'Le Brasse-temps', note:'5/5', commentaire:'Bonne Cuvée des Trolls brassée sur place en plus!', pseudo:'Romane'});
-var f10 = new feed_db({ nomEta:'La Gaudeamus', note:'2/5', commentaire:'Renfermé et peu lumineux', pseudo:'JeanJass'});
+var f10 = new feed_db({ nomEta:'Le Gaudeamus', note:'2/5', commentaire:'Renfermé et peu lumineux', pseudo:'JeanJass'});
     /* Sortie */
 var f11 = new feed_db({ nomEta:'Le Marschmallow', note:'2/5', commentaire:'Bonne boîte dans l\'ensemble à part quelques videurs trop peu qualifiés d\'après moi.', pseudo:'Pierre'});
 var f12 = new feed_db({ nomEta:'Le Maska', note:'4/5', commentaire:'Pleins de bons souvenirs dans cet endroit!', pseudo:'Jean'});
